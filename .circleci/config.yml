@@ -9,9 +9,7 @@ commands:
   build:
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: npm i
+      - run: npm i
       - run: npm run build
   test:
     steps:
