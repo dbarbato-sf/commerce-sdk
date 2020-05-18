@@ -9,7 +9,7 @@ commands:
   build:
     steps:
       - checkout
-      - run: npm i
+      - run: npm ci
       - run: npm run build
   test:
     steps:
