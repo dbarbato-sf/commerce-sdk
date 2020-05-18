@@ -2,7 +2,7 @@
   "name": "commerce-sdk",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist",
+    "postinstall": "npm ci && lerna bootstrap --hoist",
     "updateApis": "lerna run updateApis",
     "build": "lerna run build",
     "test": "lerna run test",
