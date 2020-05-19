@@ -1,6 +1,6 @@
 ignores: [
   "@types/chai",
-  "chai",
+  "chai*",
   "depcheck",
   "eslint*",
   "mocha",

@@ -8,6 +8,16 @@ import fs from "fs-extra";
 import path from "path";
 import Handlebars from "handlebars";
 import {
+  WebApiBaseUnit,
+  WebApiBaseUnitWithDeclaresModel,
+  WebApiBaseUnitWithEncodesModel
+} from "webapi-parser";
+import _ from "lodash";
+import { model } from "amf-client-js";
+
+import { RestApi } from "@commerce-apps/raml-toolkit";
+
+import {
   getAllDataTypes,
   processApiFamily,
   getApiName,
@@ -35,14 +45,6 @@ import {
   getPascalCaseName,
   formatForTsDoc
 } from "./templateHelpers";
-import {
-  WebApiBaseUnit,
-  WebApiBaseUnitWithDeclaresModel,
-  WebApiBaseUnitWithEncodesModel
-} from "webapi-parser";
-import _ from "lodash";
-import { RestApi } from "@commerce-apps/raml-toolkit";
-import { model } from "amf-client-js";
 import { generatorLogger } from "./logger";
 
 /**
