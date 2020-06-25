@@ -338,3 +338,22 @@ const shopperStoresClient = new Seller.ShopperStores(config);
 ```
 
 **Mule App Version:** 1.0.6
+
+## unclassified
+
+### [Shopper Login & API Access Service - SLAS](https://developer.commercecloud.com/s/api-details/)
+
+*Enable shopper log in with any social IDP and API access to Shopper APIs*
+
+To instantiate a client:
+
+```typescript
+import { Unclassified, ClientConfig } from "commerce-sdk";
+// or
+const { Unclassified, ClientConfig } = require("commerce-sdk");
+
+const config: ClientConfig = { /* ... */ };
+const shopperLoginApiAuthNSlasClient = new Unclassified.ShopperLoginApiAuthNSlas(config);
+```
+
+**Mule App Version:** 1.0.14
